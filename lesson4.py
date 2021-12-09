@@ -5,6 +5,16 @@ for char in range(len(word) - 1, -1, -1):
   print(word[char], end="")
 print()
 
+print("Задание 3")
+print()
+a = int(input())
+for i in range(0, a):
+  print('*' * i)
+b = a - 1
+for i in range(b - 1, - 1, -1,):
+    print('*' * i)
+print()
+
 print('Задание 4')
 print()
 A = int(input())
@@ -23,4 +33,6 @@ a = int(input())
 b = int(input())
 for i in range(a, b + 1):
     print(i)
+print()
+
 
