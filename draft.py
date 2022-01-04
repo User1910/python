@@ -1,9 +1,26 @@
-list_1 = [5, 10, 15, 20, 25, 30]
-list_2 = [10, 20, 30, 40, 50, 60]
+from random import randint
 
-list_difference = []
-for element in list_1:
-    if element not in list_2:
-        list_difference.append(element)
 
-print(list_difference)
+def generate_list_rand_int():
+    result = [randint(1, 10) for _ in range(20)]
+    return result
+
+
+def print_str(some_string):
+    print(some_string)
+
+
+def print_reverse_str(some_string):
+    print(some_string[::-1])
+
+
+def get_reverse_str(some_string):
+    return some_string[::-1]
+
+
+def change_list_last_value(my_list, last_value):
+    # if not my_list:
+    #     return my_list
+    my_list.pop()
+    my_list.append(last_value)
+    return my_list
